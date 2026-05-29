@@ -1,0 +1,17 @@
+{
+  "name": "engine",
+  "version": "1.0.0",
+  "description": "이 폴더는 미백 분석 알고리즘(Clare Engine) 백엔드를 직접 개발하기 위한 공간입니다.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^6.39.0"
+  }
+}
