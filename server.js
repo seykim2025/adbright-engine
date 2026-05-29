@@ -114,6 +114,11 @@ app.post('/api/v1/analyze', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Clare Engine server running on http://localhost:${PORT}`);
-});
+// Vercel 환경에서는 app.listen 대신 export를 사용해야 합니다.
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🚀 Clare Engine server running on http://localhost:${PORT}`);
+  });
+}
+
+export default app;
