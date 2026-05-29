@@ -33,5 +33,14 @@ Respond ONLY with a valid JSON object matching this schema:
   "clinical_notes": {
     "dehydration_risk": boolean,
     "surface_characterization": "heavy" | "moderate" | "light"
+  },
+  "analysis_basis": {
+    "bounding_box": {
+      "x": 0.00,
+      "y": 0.00,
+      "width": 0.00,
+      "height": 0.00
+    },
+    "reasoning": "string (Korean, Provide a convincing explanation of the analysis based on the selected region. Format example: '선택된 치아 중앙부는 명도(L*)가 80 이상으로 측정되며, 약간의 황갈색(b*) 침착이 관찰되어 13단계로 판정되었습니다.')"
   }
 }
